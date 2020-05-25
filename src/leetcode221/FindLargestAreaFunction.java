@@ -17,7 +17,7 @@ public class FindLargestAreaFunction {
             for(int j = 1; j <= n; j++){
             	// - 1 since i and j starts from 1
                 if(matrix[i - 1][j - 1] == '1'){
-                	// Check the top left, top right, then check the bottom left, min will make sure to get any 0
+                	// Check the top left, top right, bottom left, min to get smallest area
                     dp[i][j] = Math.min(Math.min(dp[i - 1][j - 1], dp[i][j - 1]), dp[i - 1][j]) + 1;
                     
                     // Get the max area
