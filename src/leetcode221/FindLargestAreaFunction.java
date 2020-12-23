@@ -2,6 +2,7 @@ package leetcode221;
 
 public class FindLargestAreaFunction {
 	// O(m * n) time and O(m * n) space
+	// Dp solution
     public int maximalSquare(char[][] matrix) {
         if(matrix.length == 0){
             return 0;
